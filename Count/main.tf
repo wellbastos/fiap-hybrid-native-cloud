@@ -1,8 +1,9 @@
 module "localfile" {
-  source = "./modules/file"
+  source = "../file"
   filename = "${terraform.workspace}"
 }
 
+# Specify the provider and access details
 provider "aws" {
   region = "${var.aws_region}"
 }
@@ -64,7 +65,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
   ami           = "${lookup(var.aws_amis, var.aws_region)}"
 
-  count = 2
+  count = "${var.qtd_elb}"
 
   subnet_id              = "${random_shuffle.random_subnet.result[0]}"
   vpc_security_group_ids = ["${aws_security_group.allow-ssh.id}"]
@@ -93,4 +94,3 @@ resource "aws_instance" "web" {
     Name = "${format("nginx-%s-%03d", terraform.workspace,count.index + 1)}"
   }
 }
-
