@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "desafio-fiap-bucket"
-    key    = "instancecount"
+    key    = "routetables"
     region = "us-east-1"
   }
 }

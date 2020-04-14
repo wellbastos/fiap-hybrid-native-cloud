@@ -5,13 +5,13 @@ locals {
   // using map
   context = {
     default = {
-      name = "${var.filename}-dev.txt"
+      name = "${var.filename}-stg.txt"
     }
-    dev = {
-      name = "${var.filename}-dev.txt"
+    stg = {
+      name = "${var.filename}-stg.txt"
     }
-    homol = {
-      name = "${var.filename}-homol.txt"
+    hmg = {
+      name = "${var.filename}-hmg.txt"
     }
     prod = {
       name = "${var.filename}-prod.txt"
