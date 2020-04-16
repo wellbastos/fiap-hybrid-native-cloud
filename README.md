@@ -13,3 +13,34 @@ https://github.com/vamperst/hybridnativecloud-exercises-terraform/tree/master/De
 
 Nome de maquina:
 Name = "${format("nginx-%s-%03d", terraform.workspace,count.index + 1)}"
+
+---
+
+
+![Alt](images/1.png)
+![Alt](images/2.png)
+![Alt](images/3.png)
+![Alt](images/4.png)
+![Alt](images/5.png)
+![Alt](images/6.png)
+![Alt](images/7.png)
+![Alt](images/8.png)
+![Alt](images/9.png)
+![Alt](images/10.png)
+![Alt](images/11.png)
+![Alt](images/12.png)
+![Alt](images/13.png)
+![Alt](images/14.png)
+![Alt](images/15.png)
+![Alt](images/16.png)
+![Alt](images/17.png)
+![Alt](images/18.png)
+![Alt](images/19.png)
+![Alt](images/20.png)
+![Alt](images/21.png)
+![Alt](images/22.png)
+![Alt](images/23.png)
+![Alt](images/25.png)
+![Alt](images/25.png)
+![Alt](images/26.png)
+

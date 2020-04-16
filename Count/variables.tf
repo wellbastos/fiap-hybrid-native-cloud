@@ -27,3 +27,7 @@ variable "qtd_elb" {
   type = number
   default = 2
 }
+
+variable "pathScript" {
+  default = "/tmp/script.sh" 
+}

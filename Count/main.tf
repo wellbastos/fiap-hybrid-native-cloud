@@ -72,7 +72,8 @@ resource "aws_instance" "web" {
   key_name               = "${var.KEY_NAME}"
 
   provisioner "file" {
-    source      = "script.sh"
+    # source      = "script.sh"
+    source = "${var.pathScript}"    
     destination = "/tmp/script.sh"
   }
 
